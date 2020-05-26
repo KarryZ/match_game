@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Match-Match Game</title>
+	<link rel="icon" type="img/png" href="img/favicon.png"/>
+	<link rel="stylesheet" href="css/style.css">
+	<link href="https://fonts.googleapis.com/css?family=Comfortaa:300,400,700" rel="stylesheet">
+	  </head>
+
+<body>
+	<div class="main-content">
+		<div class="game-settings" id="game-settings">
+		<div class="about-game">
+			<h1>Match-Match Game</h1>
+			<ul>
+				<li>Select two cards to try to match the pictures</li>
+				<li>If you match the pictures you can go again.</li>
+				<li>If they don't match it is the computer turn them</li>
+				<li>The player that finds all pairs wins!</li>
+				
+			</ul>
+		</div>
+			
+			<div class="shirt-cards" >
+				<h2>Shirt cards</h2>
+				<div class="shirts-choice" id='UserChoiceShirt'>
+					<div class="shirt-example"> <img src="img/adventureTime/cover-example.jpg" alt="" class="adventureTime"> </div>
+					<div class="shirt-example"> <img src="img/happyTreeFriends/cover-example.jpg" alt="" class="happyTreeFriends"> </div>
+					<div class="shirt-example"> <img src="img/SouthPark/cover-example.jpg" alt="" class="southPark"> </div>
+				</div>
+			</div>
+			<div class="game-level" id='UserChoiceLevel'>
+				<h2>Game Difficulty</h2>
+				<div class="container-level">
+					<div class="level-item" data-value="1">Easy</div>
+					<div class="level-item" data-value="2">Middle</div>
+					<div class="level-item" data-value="3">Hard</div>
+				</div>
+			</div>
+			<div class="form">
+				<h2>Registration Player</h2>
+				<form action="#" method="post" id='form-regist'>
+				<div class="form-container">
+						<div class="form-item input-first-name">
+						<input type="text" id="first-name" name="first-name" placeholder="first name *" required> </div>
+					<div class="form-item input-last-name">
+						<input type="text" id="last-name" name="last-name" placeholder="last name *" required> </div>
+					<div class="form-item input-email">
+						<input type="email" id="email" name="mail" placeholder="your email *" required> </div>
+				</div>
+				
+					<div class="form-item input-submit">
+                        <div class="start-game" id="startButton">Start Game</div> </div>
+				</form>
+			</div>
+		</div>
+		
+		<div class="game-container" id='game-container'>
+			<h2>Match-Match Game</h2>
+			<div class="game-info">
+				<div class="game-info-item" id="player-name"></div>
+				<div class="game-info-item" id="player-time"></div>
+				<div class="game-info-item new-game-button" id="player-new-game" onclick=(location.reload())>New Game</div>
+			</div>
+			<div class="game-cards-area">
+			
+				<div class="start-level" id="start-level">
+<!--				10 items-->
+					
+    <div class="card-container">
+        <div class="card">
+            <div class="side"><img src=""></div>
+            <div class="side back"></div>
+        </div>
+    </div>
+                    <div class="card-container">
+        <div class="card">
+            <div class="side"><img src=""></div>
+            <div class="side back"></div>
+        </div>
+    </div>
+                    <div class="card-container">
+        <div class="card">
+            <div class="side"><img src=""></div>
+            <div class="side back"></div>
+        </div>
+    </div>
+                    <div class="card-container">
+        <div class="card">
+            <div class="side"><img src=""></div>
+            <div class="side back"></div>
+        </div>
+    </div>
+                    <div class="card-container">
+        <div class="card" >
+            <div class="side"><img src=""></div>
+            <div class="side back"></div>
+        </div>
+    </div>
+                    <div class="card-container">
+        <div class="card">
+            <div class="side"><img src=""></div>
+            <div class="side back"></div>
+        </div>
+    </div>
+                    <div class="card-container">
+        <div class="card">
+            <div class="side"><img src=""></div>
+            <div class="side back"></div>
+        </div>
+    </div>
+                    <div class="card-container">
+        <div class="card">
+            <div class="side"><img src=""></div>
+            <div class="side back"></div>
+        </div>
+    </div>
+                    <div class="card-container">
+        <div class="card">
+            <div class="side"><img src=""></div>
+            <div class="side back"></div>
+        </div>
+    </div>
+                    <div class="card-container">
+        <div class="card" >
+            <div class="side"><img src=""></div>
+            <div class="side back"></div>
+        </div>
+    </div>
+
+					
+					
+</div>
+				
+				<div class="middle-level" id="middle-level">
+					<div class="card-container">
+        <div class="card">
+            <div class="side"><img src=""></div>
+            <div class="side back"></div>
+        </div>
+    </div>
+    <div class="card-container">
+        <div class="card">
+            <div class="side"><img src=""></div>
+            <div class="side back"></div>
+        </div>
+    </div>
+    <div class="card-container">
+        <div class="card">
+            <div class="side"><img src=""></div>
+            <div class="side back"></div>
+        </div>
+    </div>
+    <div class="card-container">
+        <div class="card">
+            <div class="side"><img src=""></div>
+            <div class="side back"></div>
+        </div>
+    </div>
+    <div class="card-container">
+        <div class="card">
+            <div class="side"><img src=""></div>
+            <div class="side back"></div>
+        </div>
+    </div>
+    <div class="card-container">
+        <div class="card">
+            <div class="side"><img src=""></div>
+            <div class="side back"></div>
+        </div>
+    </div>
+    <div class="card-container">
+        <div class="card">
+            <div class="side"><img src=""></div>
+            <div class="side back"></div>
+        </div>
+    </div>
+    <div class="card-container">
+        <div class="card">
+            <div class="side"><img src=""></div>
+            <div class="side back"></div>
+        </div>
+    </div>
+    <div class="card-container">
+        <div class="card">
+            <div class="side"><img src=""></div>
+            <div class="side back"></div>
+        </div>
+    </div>
+    <div class="card-container">
+        <div class="card">
+            <div class="side"><img src=""></div>
+            <div class="side back"></div>
+        </div>
+    </div>
+    <div class="card-container">
+        <div class="card">
+            <div class="side"><img src=""></div>
+            <div class="side back"></div>
+        </div>
+    </div>
+    <div class="card-container">
+        <div class="card">
+            <div class="side"><img src=""></div>
+            <div class="side back"></div>
+        </div>
+    </div>
+    <div class="card-container">
+        <div class="card">
+            <div class="side"><img src=""></div>
+            <div class="side back"></div>
+        </div>
+    </div>
+    <div class="card-container">
+        <div class="card">
+            <div class="side"><img src=""></div>
+            <div class="side back"></div>
+        </div>
+    </div>
+    <div class="card-container">
+        <div class="card">
+            <div class="side"><img src=""></div>
+            <div class="side back"></div>
+        </div>
+    </div>
+    <div class="card-container">
+        <div class="card">
+            <div class="side"><img src=""></div>
+            <div class="side back"></div>
+        </div>
+    </div>
+    <div class="card-container">
+        <div class="card">
+            <div class="side"><img src=""></div>
+            <div class="side back"></div>
+        </div>
+    </div>
+    <div class="card-container">
+        <div class="card">
+            <div class="side"><img src=""></div>
+            <div class="side back"></div>
+        </div>
+    </div>
+					
+				</div>
+				
+				<div class="hard-level" id="hard-level">
+					<div class="card-container">
+        <div class="card">
+            <div class="side"><img src=""></div>
+            <div class="side back"></div>
+        </div>
+    </div>
+    <div class="card-container">
+        <div class="card">
+            <div class="side"><img src=""></div>
+            <div class="side back"></div>
+        </div>
+    </div>
+    <div class="card-container">
+        <div class="card">
+            <div class="side"><img src=""></div>
+            <div class="side back"></div>
+        </div>
+    </div>
+    <div class="card-container">
+        <div class="card">
+            <div class="side"><img src=""></div>
+            <div class="side back"></div>
+        </div>
+    </div>
+    <div class="card-container">
+        <div class="card">
+            <div class="side"><img src=""></div>
+            <div class="side back"></div>
+        </div>
+    </div>
+    <div class="card-container">
+        <div class="card">
+            <div class="side"><img src=""></div>
+            <div class="side back"></div>
+        </div>
+    </div>
+    <div class="card-container">
+        <div class="card">
+            <div class="side"><img src=""></div>
+            <div class="side back"></div>
+        </div>
+    </div>
+    <div class="card-container">
+        <div class="card">
+            <div class="side"><img src=""></div>
+            <div class="side back"></div>
+        </div>
+    </div>
+    <div class="card-container">
+        <div class="card">
+            <div class="side"><img src=""></div>
+            <div class="side back"></div>
+        </div>
+    </div>
+    <div class="card-container">
+        <div class="card">
+            <div class="side"><img src=""></div>
+            <div class="side back"></div>
+        </div>
+    </div>
+    <div class="card-container">
+        <div class="card">
+            <div class="side"><img src=""></div>
+            <div class="side back"></div>
+        </div>
+    </div>
+    <div class="card-container">
+        <div class="card">
+            <div class="side"><img src=""></div>
+            <div class="side back"></div>
+        </div>
+    </div>
+    <div class="card-container">
+        <div class="card">
+            <div class="side"><img src=""></div>
+            <div class="side back"></div>
+        </div>
+    </div>
+    <div class="card-container">
+        <div class="card">
+            <div class="side"><img src=""></div>
+            <div class="side back"></div>
+        </div>
+    </div>
+    <div class="card-container">
+        <div class="card">
+            <div class="side"><img src=""></div>
+            <div class="side back"></div>
+        </div>
+    </div>
+    <div class="card-container">
+        <div class="card">
+            <div class="side"><img src=""></div>
+            <div class="side back"></div>
+        </div>
+    </div>
+    <div class="card-container">
+        <div class="card">
+            <div class="side"><img src=""></div>
+            <div class="side back"></div>
+        </div>
+    </div>
+    <div class="card-container">
+        <div class="card">
+            <div class="side"><img src=""></div>
+            <div class="side back"></div>
+        </div>
+    </div>
+    <div class="card-container">
+        <div class="card">
+            <div class="side"><img src=""></div>
+            <div class="side back"></div>
+        </div>
+    </div>
+    <div class="card-container">
+        <div class="card">
+            <div class="side"><img src=""></div>
+            <div class="side back"></div>
+        </div>
+    </div>
+    <div class="card-container">
+        <div class="card">
+            <div class="side"><img src=""></div>
+            <div class="side back"></div>
+        </div>
+    </div>
+    <div class="card-container">
+        <div class="card">
+            <div class="side"><img src=""></div>
+            <div class="side back"></div>
+        </div>
+    </div>
+    <div class="card-container">
+        <div class="card">
+            <div class="side"><img src=""></div>
+            <div class="side back"></div>
+        </div>
+    </div>
+    <div class="card-container">
+        <div class="card">
+            <div class="side"><img src=""></div>
+            <div class="side back"></div>
+        </div>
+    </div>
+    
+				</div>
+				
+			</div>
+			
+				<div class="congratulations">
+					<h2>congratulations!</h2>
+					<h3>Your time: <span class="congratulations-time"></span></h3>
+					<ol>
+<!--						<li><span class="number-win">1</span><span class="login"></span><span class="time">0:24</span></li>-->
+					
+					</ol>
+	</div>
+		</div>
+	</div>
+	
+
+	<script src="js/main.js"></script>
+</body>
+
+</html>
